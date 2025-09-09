@@ -1,0 +1,263 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.instagram-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 32px 0;
+  background-color: #fafafa;
+}
+
+.phone-container {
+  margin-right: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.phone-image {
+  height: 618px;
+  width: auto;
+}
+
+.form-container {
+  max-width: 350px;
+  width: 100%;
+}
+
+.login-box {
+  background: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 1px;
+  padding: 40px 40px 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.instagram-logo {
+  margin-bottom: 24px;
+}
+
+.logo-image {
+  height: 51px;
+  width: auto;
+}
+
+.login-form {
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 6px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 9px 0 7px 8px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background: #fafafa;
+  font-size: 14px;
+  color: #262626;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.form-input:focus {
+  border-color: #a8a8a8;
+  background: white;
+}
+
+.form-input::placeholder {
+  color: #8e8e8e;
+  font-size: 12px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 5px 9px;
+  margin: 8px 0;
+  background: #0095f6;
+  border: 1px solid #0095f6;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.login-button:hover:not(.disabled) {
+  background: #1877f2;
+}
+
+.login-button.disabled {
+  background: #b3d8ff;
+  border-color: #b3d8ff;
+  cursor: not-allowed;
+}
+
+.message {
+  margin: 10px 0;
+  padding: 8px;
+  border-radius: 3px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.message.success {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.message.error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 18px 0;
+}
+
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background: #dbdbdb;
+}
+
+.divider-text {
+  margin: 0 18px;
+  color: #8e8e8e;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.facebook-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 8px;
+  background: transparent;
+  border: none;
+  color: #385185;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.facebook-icon {
+  width: 16px;
+  height: 16px;
+  fill: #385185;
+  margin-right: 8px;
+}
+
+.forgot-password {
+  color: #00376b;
+  font-size: 12px;
+  text-decoration: none;
+  line-height: 14px;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.signup-box {
+  background: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 1px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.signup-box p {
+  margin: 0;
+  font-size: 14px;
+  color: #262626;
+}
+
+.signup-link {
+  color: #0095f6;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+.app-download {
+  text-align: center;
+}
+
+.app-download p {
+  font-size: 14px;
+  color: #262626;
+  margin: 0 0 20px 0;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.download-button {
+  display: block;
+}
+
+.download-button img {
+  height: 40px;
+  width: auto;
+}
+
+/* Mobile Responsive */
+@media (max-width: 875px) {
+  .phone-container {
+    display: none;
+  }
+  
+  .instagram-container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .form-container {
+    max-width: 100%;
+  }
+  
+  .login-box {
+    border: none;
+    background: transparent;
+    padding: 20px 0;
+  }
+  
+  .signup-box {
+    border: none;
+    background: transparent;
+    padding: 20px 0;
+  }
+  
+  .download-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
